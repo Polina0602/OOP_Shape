@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_Shape", "OOP_Shape\OOP_Shape.csproj", "{EEE6D14D-6D47-4BEB-826E-80F9E4C637E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_ShapeTests", "OOP_ShapeTests\OOP_ShapeTests.csproj", "{DF8EA4D9-10E7-4A15-9F4A-AAA638254DB8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EEE6D14D-6D47-4BEB-826E-80F9E4C637E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEE6D14D-6D47-4BEB-826E-80F9E4C637E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEE6D14D-6D47-4BEB-826E-80F9E4C637E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEE6D14D-6D47-4BEB-826E-80F9E4C637E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF8EA4D9-10E7-4A15-9F4A-AAA638254DB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF8EA4D9-10E7-4A15-9F4A-AAA638254DB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF8EA4D9-10E7-4A15-9F4A-AAA638254DB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF8EA4D9-10E7-4A15-9F4A-AAA638254DB8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {96EB68B4-5EE6-4610-89C2-182068168D8D}
+	EndGlobalSection
+EndGlobal
