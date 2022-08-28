@@ -47,7 +47,7 @@ namespace OOP_Shape
             }
             else 
             {
-                Console.WriteLine("The radius is wrong");
+                Console.WriteLine("The width or the length is wrong");
                 return 0;
             }
         }
@@ -65,7 +65,7 @@ namespace OOP_Shape
             }
             else 
             {
-                Console.WriteLine("The radius is wrong");
+                Console.WriteLine("The width or the length is wrong");
                 return 0;
             }
 }
