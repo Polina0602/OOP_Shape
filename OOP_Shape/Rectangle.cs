@@ -68,6 +68,12 @@ namespace OOP_Shape
                 Console.WriteLine("The width or the length is wrong");
                 return 0;
             }
-}
+        }
+
+        public override string ToString()
+        {
+            return $"A Rectangle with width = {_width} and length = {_length}, which is a subclass of {base.ToString()}";
+
+        }
     }
 }

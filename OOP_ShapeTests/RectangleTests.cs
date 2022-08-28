@@ -38,5 +38,19 @@ namespace OOP_Shape.Tests
             //Assert
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod()]
+        public void ToStringTest()
+        {
+            //Arrange
+            Rectangle rectangle = new Rectangle(2, 5, "white", true);
+            var expected = "A Rectangle with width = 2 and length = 5, which is a subclass of A Shape with color white and filled";
+            
+            //Act
+            var actual = rectangle.ToString();
+
+            //Assert
+            Assert.AreEqual(expected,actual);
+        }
     }
 }
