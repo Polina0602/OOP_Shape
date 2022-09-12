@@ -11,15 +11,40 @@ namespace OOP_Shape.Tests
     [TestClass()]
     public class ShapeTests
     {
+        public class ShapeTest : Shape 
+        {
+            public ShapeTest()
+            {
+
+            }
+            public ShapeTest(string Color, bool IsFilled) : base(Color, IsFilled)
+            {
+            }
+        };
+
         [TestMethod()]
         public void ToStringTest()
         {
             // Arrange
-            Circle circle = new Circle(2, "red", true);
-            string expected = "A Shape with color red and filled";
+            ShapeTest shape = new ShapeTest();
+            string expected = "A Shape with color green and filled";
 
             //Act
-            string actual = circle.ToString();
+            string actual = shape.ToString();
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+
+        [TestMethod()]
+        public void ToStringWithParametersTest()
+        {
+            // Arrange
+            ShapeTest shape = new ShapeTest("red", false);
+            string expected = "A Shape with color red and not filled";
+
+            //Act
+            string actual = shape.ToString();
             //Assert
             Assert.AreEqual(expected, actual);
         }

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace OOP_Shape
 {
     public class Rectangle : Shape, IGeometricObject
@@ -26,10 +21,10 @@ namespace OOP_Shape
             _length = getLength;
         }
 
-        public Rectangle(double getWidth, double getLengt, string getColor, bool isFilled) : base(getColor, isFilled)
+        public Rectangle(double getWidth, double getLength, string getColor, bool isFilled) : base(getColor, isFilled)
         {
             _width = getWidth;
-            _length = getLengt;
+            _length = getLength;
             color = getColor;
             this.isFilled = isFilled;
         }

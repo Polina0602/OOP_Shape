@@ -27,7 +27,7 @@ namespace OOP_Shape
 
         }
 
-        public override string ToString()
+        public virtual string ToString()
         {
             if (isFilled)
             {

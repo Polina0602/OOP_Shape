@@ -57,7 +57,7 @@ namespace OOP_Shape
 
         public double getPerimeter()
         {
-            if (_radius >= 0)
+            if (_radius > 0)
             {
                 return 2 * PI * _radius;
             }

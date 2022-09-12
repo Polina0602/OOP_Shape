@@ -15,8 +15,64 @@ namespace OOP_Shape.Tests
         public void getAreaTest()
         {
             //Arrange
+            Rectangle rectangle = new Rectangle();
+            var expected = 1;
+
+            //Act
+            var actual = rectangle.getArea();
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void getAreaWithWidthAndLengthTest()
+        {
+            //Arrange
             Rectangle rectangle = new Rectangle(2, 5);
             var expected = 10;
+
+            //Act
+            var actual = rectangle.getArea();
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void getAreaWithAllParametersTest()
+        {
+            //Arrange
+            Rectangle rectangle = new Rectangle(2, 5, "white", true);
+            var expected = 10;
+
+            //Act
+            var actual = rectangle.getArea();
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void getAreaWithWidthIsZeroTest()
+        {
+            //Arrange
+            Rectangle rectangle = new Rectangle(0, 4);
+            var expected = 0;
+
+            //Act
+            var actual = rectangle.getArea();
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void getAreaWithLengthIsZeroTest()
+        {
+            //Arrange
+            Rectangle rectangle = new Rectangle(4, 0);
+            var expected = 0;
 
             //Act
             var actual = rectangle.getArea();
@@ -29,8 +85,64 @@ namespace OOP_Shape.Tests
         public void getPerimeterTest()
         {
             //Arrange
+            Rectangle rectangle = new Rectangle();
+            var expected = 2;
+
+            //Act
+            var actual = rectangle.getPerimeter();
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void getPerimeterWithWidthAndLengthTest()
+        {
+            //Arrange
             Rectangle rectangle = new Rectangle(2, 5);
             var expected = 14;
+
+            //Act
+            var actual = rectangle.getPerimeter();
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void getPerimeterWithAllParametersTest()
+        {
+            //Arrange
+            Rectangle rectangle = new Rectangle(2, 5, "white", true);
+            var expected = 14;
+
+            //Act
+            var actual = rectangle.getPerimeter();
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void getPerimeterWithWidthIsZeroTest()
+        {
+            //Arrange
+            Rectangle rectangle = new Rectangle(0, 4);
+            var expected = 0;
+
+            //Act
+            var actual = rectangle.getPerimeter();
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod()]
+        public void getPerimeterWithLengthIsZeroTest()
+        {
+            //Arrange
+            Rectangle rectangle = new Rectangle(4, 0);
+            var expected = 0;
 
             //Act
             var actual = rectangle.getPerimeter();
