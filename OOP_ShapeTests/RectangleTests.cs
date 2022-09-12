@@ -86,7 +86,7 @@ namespace OOP_Shape.Tests
         {
             //Arrange
             Rectangle rectangle = new Rectangle();
-            var expected = 2;
+            var expected = 4;
 
             //Act
             var actual = rectangle.getPerimeter();
