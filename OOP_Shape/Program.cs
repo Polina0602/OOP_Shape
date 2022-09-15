@@ -3,3 +3,4 @@ using OOP_Shape;
 
 
 Circle c = new Circle();
+Rectangle r = new Rectangle();
